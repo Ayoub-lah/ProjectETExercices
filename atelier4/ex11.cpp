@@ -36,7 +36,7 @@ void Traitement::show(){
 static int somme=0;
 
 double moyenne(Traitement T){
-    for(int i=0;i<T.tab.size();i++)
+    for(int i=0;i<15;i++)
         somme+=T.tab[i];
     return somme/T.tab.size();
 }
@@ -44,8 +44,7 @@ double moyenne(Traitement T){
 double median(const Traitement& t) {
     vector<int> v ; 
     sort(v.begin(), v.end()); 
-    int taille = 15;
-        return (v[15 / 2]+1) / 2.0;
+        return v[8]; // la relation median le cas de taille impaire est :(n+1)/2 => (15+1)/2=8 
 }
 
 
