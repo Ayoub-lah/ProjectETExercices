@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Afficher les informations sans JavaScript</title>
+<style>
+    details {
+        font-family: Arial, sans-serif;
+        margin-top: 10px;
+    }
+
+    summary {
+        font-weight: bold;
+        cursor: pointer;
+        color: #007BFF;
+    }
+
+    /* Style supplémentaire pour personnaliser le texte */
+    details[open] summary {
+        color: #0056b3; /* Changement de couleur lorsque ouvert */
+    }
+
+    .info-content {
+        margin-top: 5px;
+        color: #555;
+        font-style: italic;
+    }
+</style>
+</head>
+<body>
+
+<details>
+    <summary>Cliquez ici pour afficher les informations</summary>
+    <div class="info-content">
+        Voici les informations supplémentaires que vous avez demandées. Ce contenu est affiché sans utiliser JavaScript, grâce aux balises HTML5 `<details>` et `<summary>`.
+    </div>
+</details>
+
+</body>
+</html>

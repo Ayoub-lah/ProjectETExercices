@@ -1,0 +1,39 @@
+body{
+    background-color: rgb(114, 114, 230);
+}
+
+h1,
+h2{
+    background-color: yellow;
+}
+
+p{
+    border: dotted;
+    border-color: black;
+    background-color: lightblue;
+    margin: 0 160px;
+    padding-bottom: 160px;
+    color: white;
+    font-size: 20px;
+    box-shadow: 15px 15px gray;
+}
+
+.p1{
+    border: dotted;
+    border-color: black;
+    background: radial-gradient( yellow,green,red) ;
+    margin: 0 160px;
+    padding-bottom: 200px;
+    color: white;
+    font-size: 20px;
+    box-shadow: 15px 15px gray;
+}
+
+.p2{
+    background-color: greenyellow;   
+    margin: 0px;
+    background-image: url(logo_W3C.gif);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 90% 90%;
+}

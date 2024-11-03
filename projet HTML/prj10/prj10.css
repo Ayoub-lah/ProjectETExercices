@@ -1,0 +1,46 @@
+.head2{
+    background-color: yellow;
+    text-align: center;
+    margin: 10px 150px 5px;
+    box-shadow: 10px 10px black;
+}
+
+.ab{
+    background-color: green;
+    color: white;
+}
+
+.bd{
+    background-color: lightblue;
+}
+
+.blue{
+    background-color: blue;
+    color: white;
+}
+
+.red{
+    background-color: red;
+    color: white;
+}
+
+.div1{
+    margin: 20px 250px 10px ;
+    border: solid;
+    border-color: gray;
+    box-shadow: 15px 15px gray;
+    overflow: auto;
+    height: 700px;
+}
+
+.div2{
+    margin: 20px 50px 10px;
+}
+
+.div3{
+    display: none;
+}
+
+.head2:hover +.div3 {
+    display: block;
+}
