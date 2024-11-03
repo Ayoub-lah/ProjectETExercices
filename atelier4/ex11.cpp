@@ -41,8 +41,15 @@ double moyenne(Traitement T){
     return somme/T.tab.size();
 }
 
-double  medain(Traitement T){
-    return somme/2;
+double median(const Traitement& t) {
+    vector<int> v = t.tab; 
+    sort(v.begin(), v.end()); 
+
+    int taille = v.size();
+    if (taille % 2 == 0) 
+        return (v[taille / 2 - 1] + v[taille / 2]) / 2.0;
+    else 
+        return v[taille / 2];
 }
 
 
