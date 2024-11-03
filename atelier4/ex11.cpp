@@ -1,6 +1,7 @@
 #include <iostream>
 #include <vector>
 #include <iterator>
+#include <algorithm>
 using namespace  std;
 
 class Traitement{
@@ -8,9 +9,9 @@ class Traitement{
         vector<int> tab;
     public:
         void Initialise();
-        void show();
-        friend double  moyenne(Traitement);
-        friend double medain(Traitement);
+        void show(int index);
+        friend double  moyenne(Traitement tab);
+        friend double medain(const Traitement& tab);
 };
 int i=0;
 int v;
@@ -28,30 +29,33 @@ void  Traitement::Initialise(){
     
 }
 
-void Traitement::show(){
-    for(int i :tab)
-        cout <<  i << " ";
-}
+void  Traitement::show(int index) {
+     index=0;
+        if (index < tab.size()) {
+            cout << tab[index] << " ";
+            show(index + 1);
+        } else if (index == 0) {
+            cout << "vide."<<endl;
+        }
+    }
 
 static int somme=0;
 
 double moyenne(Traitement T){
-    for(int i=0;i<15;i++)
+    for(int i=0;i<T.tab.size();i++)
         somme+=T.tab[i];
     return somme/T.tab.size();
 }
 
 double median(const Traitement& t) {
-    vector<int> v ; 
+    vector<int> v = t.tab; 
     sort(v.begin(), v.end()); 
-        return v[8]; // la relation median le cas de taille impaire est :(n+1)/2 => (15+1)/2=8 
-}
 
-
-int main(){
-    Traitement T;
-    T.Initialise();
-    T.show();
+    int taille = v.size();
+    if (taille % 2 == 0) 
+        return (v[taille / 2 - 1] + v[taille / 2]) / 2.0;
+    else 
+        return v[taille / 2];
 }
 
 
