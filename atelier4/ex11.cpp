@@ -42,14 +42,10 @@ double moyenne(Traitement T){
 }
 
 double median(const Traitement& t) {
-    vector<int> v = t.tab; 
+    vector<int> v ; 
     sort(v.begin(), v.end()); 
-
-    int taille = v.size();
-    if (taille % 2 == 0) 
-        return (v[taille / 2 - 1] + v[taille / 2]) / 2.0;
-    else 
-        return v[taille / 2];
+    int taille = 15;
+        return (v[15 / 2]+1) / 2.0;
 }
 
 
