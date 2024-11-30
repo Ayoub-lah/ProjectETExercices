@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Irregular Verbs</title>
+    <link rel="stylesheet" href="devoircss.css">
+</head>
+<body>
+    <div id="app">
+        <header>
+            <div>
+                <button id="btn1">◀ ▶</button>
+            </div>
+            <h1>English: Irregular Verbs</h1>
+            <button id="toggleView">▶</button>
+        </header>
+        <main>  
+            <section id="leftPanel">
+                <table id="verbsTable">
+                    <thead>
+                        <tr>
+                            <th>Base Form</th>
+                            <th>Past Tense</th>
+                            <th>Past Participle</th>
+                            <th>Translation</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+            </section>
+            <section id="rightPanel">
+                <div id="links">
+                    <div id="pos">
+                        <button id="addVerb">Add a verb</button>
+                        <span>
+                            <input type="text" id="searchVerb" placeholder="verb to find" value="val">
+                            <span></span>
+                        </span>
+                        <button id="findVerb">Find</button>
+                    </div>
+                    <p id="let">Cliquez sur la lettre pour voir les verbes commençant par cette la lettre souhaitée :</p>
+                    <ul id="letterLinks">
+                            <li>Here is a link to<a href="#"> verbs that start with the letter a</a></li>
+                            <li>Here is a link to<a href="#"> verbs that start with the letter b</a></li>
+                            <li>Here is a link to<a href="#"> verbs that start with the letter c</a></li>
+                            <li>Here is a link to<a href="#"> verbs that start with the letter d</a></li>
+                            <li>Here is a link to<a href="#"> verbs that start with the letter e</a></li>
+                            <li>Here is a link to<a href="#"> verbs that start with the letter f</a></li>
+                            <li>Here is a link to<a href="#"> verbs that start with the letter g</a></li>
+                            <li>Here is a link to<a href="#"> verbs that start with the letter h</a></li>
+                            <li>Here is a link to<a href="#"> verbs that start with the letter j</a></li>
+                            <li>Here is a link to<a href="#"> verbs that start with the letter k</a></li>
+                            <li>Here is a link to<a href="#"> verbs that start with the letter l</a></li>
+                            <li>Here is a link to<a href="#"> verbs that start with the letter m</a></li>
+                            <li>Here is a link to<a href="#"> verbs that start with the letter n</a></li>
+                            <li>Here is a link to<a href="#"> verbs that start with the letter o</a></li>
+                            <li>Here is a link to<a href="#"> verbs that start with the letter p</a></li>
+                            <li>Here is a link to<a href="#"> verbs that start with the letter q</a></li>
+                            <li>Here is a link to<a href="#"> verbs that start with the letter r</a></li>
+                            <li>Here is a link to<a href="#"> verbs that start with the letter s</a></li>
+                            <li>Here is a link to<a href="#"> verbs that start with the letter t</a></li>
+                            <li>Here is a link to<a href="#"> verbs that start with the letter u</a></li>
+                            <li>Here is a link to<a href="#"> verbs that start with the letter v</a></li>
+                            <li>Here is a link to<a href="#"> verbs that start with the letter w</a></li>
+                            <li>Here is a link to<a href="#"> verbs that start with the letter x</a></li>
+                            <li>Here is a link to<a href="#"> verbs that start with the letter y</a></li>
+                            <li>Here is a link to<a href="#"> verbs that start with the letter z</a></li>
+                    </ul>
+                </div>
+                <div id="stats">
+                    <h3 class="stat">Statistics</h3>
+                    <p id="par">Verbs on average par la letter : </p>
+                    <p id="statsDetails"></p>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="devoirjs.js"></script>
+</body>
+</html>
