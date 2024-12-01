@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="prj12.css" />
+  </head>
+  <body>
+    <h1 id="title">Happy Christmas</h1>
+    <p id="description">Enjoy the festive season with your loved ones!</p>
+    <form method="post" id="survey-form">
+      <fieldset>
+        <label id="name-label">
+            Enter Full Name :
+            <input id="name" name="full_name" type="text" required placeholder="Full Name"/>
+        </label>
+        <label id="email-label">
+            Enter Your Email: 
+            <input id="email" name="email" type="email" required placeholder="Email"/>
+        </label>
+        <label id="number-label">
+            Enter Your age :
+            <input id="number" name="age" type="number" required max="90" min="10"  placeholder="Age"/>
+        </label>
+      </fieldset>
+      <fieldset>
+        <legend>
+            what you like in christmas :
+        </legend>
+        <label for="The-Festive-Spirit">
+            <input id="The-Festive-Spirit" type="radio" name="type" class="inline" checked value="The Festive Spirit"/>
+                The Festive Spirit
+        </label>
+        <label for="Winter-Vibes">
+            <input id="Winter-Vibes" type="radio" name="type" class="inline" value="Winter Vibes" />
+                Winter Vibes
+        </label>
+        <label for="The-Spirit-of-Giving">
+            <input id="The-Spirit-of-Giving" type="radio" name="type" class="inline" value="The Spirit of Giving"/>
+                The Spirit of Giving 
+        </label>
+        <label for="Holiday-Music">
+            <input id="Holiday-Music" type="radio" name="type" class="inline" value="Holiday Music"/>
+                Holiday Music
+        </label>
+      </fieldset>
+      <fieldset>
+        <label for="referrer">
+                what the best gift in christmas :
+            <select id="dropdown" name="dropdown">
+                <option value="">select one</option>
+                <option value="1">Personalized Gifts</option>
+                <option value="2">Something Useful and Thoughtful</option>
+                <option value="3">Hobby-Related Gifts</option>
+                <option value="4">Other</option>
+            </select>
+            <fieldset>
+                <legend>
+                    what you do in christmas :
+                </legend>
+                <label for="Setting-Up-Decorations">
+                    <input id="Setting-Up-Decorations" type="checkbox" name="type" class="inline" checked value="Setting Up Decorations"/>
+                        Setting Up Decorations
+                </label>
+                <label for="Exchanging-Gifts">
+                    <input id="Exchanging-Gifts" type="checkbox" name="type" class="inline" value="Exchanging Gifts" />
+                        Exchanging Gifts
+                </label>
+                <label for="Baking-Holiday-Treats">
+                    <input id="Baking-Holiday-Treats" type="checkbox" name="type" class="inline" value="Baking Holiday Treats"/>
+                        Baking Holiday Treats 
+                </label>
+                <label for="Spending-Time-with-Family-and-Friends">
+                    <input id="Spending-Time-with-Family-and-Friends" type="checkbox" name="type" class="inline" value="Spending Time with Family and Friends"/>
+                        Spending Time with Family and Friends
+                </label>
+            </fieldset>
+        </label>
+        <label for="bio">More information about what you want to do in christmas :
+          <textarea id="bio" name="bio" rows="3" cols="30" placeholder="I like ..."></textarea>
+        </label>
+      </fieldset>
+      <input type="submit" value="Submit" id="submit"/>
+    </form>
+  </body>
+</html>
